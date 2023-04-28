@@ -29,6 +29,7 @@ def SKJ_janken(youkai_enemy,player_hand):
     if player_hand == computer_hand:
         result = "両者負け"
     elif (player_hand == "1" and computer_hand == "5") or \
+         (player_hand == "2" and computer_hand == "1") or \
          (player_hand == "2" and computer_hand == "5") or \
          (player_hand == "5" and computer_hand == "3") or \
          (player_hand == "5" and computer_hand == "4") or \
