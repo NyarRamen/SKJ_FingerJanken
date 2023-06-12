@@ -127,10 +127,10 @@ def play_game():
     player_hand = st.selectbox("あなたの手", ("-", "1", "2", "3", "4", "5"))
     if st.button("じゃんけん！"):
         computer_hand, result, img = SKJ_janken(youkai_enemy,player_hand)
-        if youkai_enemy=="sa2":
+        if youkai_enemy!="-":
             st.write(f"{youkai_enemy}の手: {computer_hand}")
-        st.write(f"結果: {result}")
-        st.image(img)
+            st.write(f"結果: {result}")
+            st.image(img)
 
 def rand_ints_nodup(a, b, k):
     ns = []
